@@ -1,9 +1,42 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+   <meta name="description" content="">
+   <meta name="author" content="">
+
   <title>Hello, World!</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
+  <style>
+  html {
+  height: 100%;
+}
+
+  body{
+    font-size: 1rem;
+    background-image:url("{% static 'img/bg.jpg' %}");
+    background-size: cover;
+    background-repeat:no-repeat;
+    max-width:100%;
+    margin:0;
+    padding:0;
+    min-height: 100%;
+  }
+  h1{
+    font-family: 'Bellota Text', cursive;
+    font-size: 5rem;
+  }
+  </style>
 </head>
 <body>
-  Hello, World!
+
+  <div class = "container" style="position:absolute;top:10%;bottom:15%;right:10%;left:10%;border:medium solid white;background-color:rgba(255,255,255,0.25)">
+  <center><h1 style="color:green">Hello, World!</h1>
+  <h1 style="color:white">Sophia's new portfolio is coming soon! :)</h1></center>
+</div>
+
 </body>
 </html>
